@@ -18,7 +18,7 @@ export default function App() {
     spirit: (areaNum * 1.29).toFixed(2) + ' л/м2',
     grunt: (areaNum * 0.16).toFixed(2) + ' кг/м2',
     emal: (areaNum * 0.235).toFixed(2) + ' кг/м2',
-  };
+  };//
 
   pdfFromUrl(consumption)
   setResults(consumption);
