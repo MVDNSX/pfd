@@ -1,12 +1,12 @@
 import { PDFDocument } from 'pdf-lib';
 import fontkit from '@pdf-lib/fontkit'
 
-export  async function pdfFromUrl(data,url='/public/219.pdf') {
+export  async function pdfFromUrl(data) {
 
-  const formUrl = '/219.pdf';
+  const formUrl = '/public/219.pdf';
   const formBytes = await fetch(formUrl).then((res) => res.arrayBuffer());
 
-  const fontUrl = '/gost_common.ttf';
+  const fontUrl = '/public/gost_common.ttf';
   const fontBytes = await fetch(fontUrl).then((res) => res.arrayBuffer());
 
   const pdfDoc = await PDFDocument.load(formBytes);
