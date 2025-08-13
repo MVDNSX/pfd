@@ -1,4 +1,4 @@
-const PdfViewer = ({ fileUrl }) => {
+const Viewer = ({ fileUrl }) => {
   return (
     <iframe
       src={fileUrl}
@@ -10,4 +10,4 @@ const PdfViewer = ({ fileUrl }) => {
   );
 };
 
-export default PdfViewer;
+export default Viewer;

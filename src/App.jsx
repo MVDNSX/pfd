@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import PdfViewer from './PDFViewer'
 import { PDFDocument } from 'pdf-lib';
 import { pdfFromUrl } from './updatePdfFromUrl'
+import Viewer from './Viewer'
 
 export default function App() {
   const [area, setArea] = useState('') // площадь в м²
@@ -63,7 +63,7 @@ export default function App() {
 
       {/* Основной контент */}
       <div className="flex-1 p-4">
-        <PdfViewer fileUrl='/public/219.pdf'/>
+        <Viewer/>
       </div>
       </div>
   );
