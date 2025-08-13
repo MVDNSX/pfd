@@ -63,7 +63,7 @@ export default function App() {
 
       {/* Основной контент */}
       <div className="flex-1 p-4">
-        <Viewer/>
+        <Viewer fileUrl={'./219.pdf'}/>
       </div>
       </div>
   );
