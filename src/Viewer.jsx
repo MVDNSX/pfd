@@ -1,7 +1,7 @@
-const Viewer = ({ fileUrl }) => {
+const Viewer = () => {
   return (
     <iframe
-      src={fileUrl}
+      src='./219.pdf'
       width="100%"
       height="600%"
       style={{ border: 'none' }}
